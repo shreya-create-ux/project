@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1">Vanish Silpa</button>
+    <h1 class="a">silpa</h1>
+    <button id="b2">Vanish Puja</button>
+    <h1 class="b">puja</h1>
+    <br><br><br>
+    <button id="B">Appear Both</button>
+</body>
+</html>
+<script>
+     $(document).ready(function(){
+        $("#b1").click(function(){
+            $(".a").hide(1000)
+        })
+        $("#b2").click(function(){
+            $(".b").hide(1000)
+        })
+        $("#B").click(function(){
+            $(".a").show(500)
+            $(".b").show(500)
+        })
+     })
+</script>
